@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - 3Pages IT Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans antialiased text-gray-800">
+  <!-- Header -->
+  <header class="bg-blue-900 text-white">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-xl font-bold">3Pages IT Solutions</a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-green-400">Home</a></li>
+        <li><a href="services.html" class="hover:text-green-400">Services</a></li>
+        <li><a href="about.html" class="hover:text-green-400">About</a></li>
+        <li><a href="contact.html" class="hover:text-green-400">Contact</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </nav>
+    <div id="menu" class="hidden md:hidden bg-blue-800">
+      <ul class="flex flex-col space-y-4 py-4 px-6">
+        <li><a href="index.html" class="hover:text-green-400">Home</a></li>
+        <li><a href="services.html" class="hover:text-green-400">Services</a></li>
+        <li><a href="about.html" class="hover:text-green-400">About</a></li>
+        <li><a href="contact.html" class="hover:text-green-400">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="container mx-auto py-20 px-6 text-center md:text-left">
+    <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">About Us</h2>
+    <p class="text-lg text-gray-700 max-w-3xl mx-auto">At 3Pages IT Solutions, we provide modern technology services designed to help businesses grow and succeed. Our mission is to deliver affordable, innovative, and reliable IT solutions that empower our clients to achieve more with less stress.</p>
+  </section>
+
+  <footer class="bg-blue-900 text-white py-6 text-center mt-10">
+    <p>&copy; 2025 3Pages IT Solutions. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

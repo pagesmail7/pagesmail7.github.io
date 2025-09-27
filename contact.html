@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - 3Pages IT Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans antialiased text-gray-800">
+  <!-- Header -->
+  <header class="bg-blue-900 text-white">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-xl font-bold">3Pages IT Solutions</a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-green-400">Home</a></li>
+        <li><a href="services.html" class="hover:text-green-400">Services</a></li>
+        <li><a href="about.html" class="hover:text-green-400">About</a></li>
+        <li><a href="contact.html" class="hover:text-green-400">Contact</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </nav>
+    <div id="menu" class="hidden md:hidden bg-blue-800">
+      <ul class="flex flex-col space-y-4 py-4 px-6">
+        <li><a href="index.html" class="hover:text-green-400">Home</a></li>
+        <li><a href="services.html" class="hover:text-green-400">Services</a></li>
+        <li><a href="about.html" class="hover:text-green-400">About</a></li>
+        <li><a href="contact.html" class="hover:text-green-400">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Contact -->
+  <section class="container mx-auto py-20 px-6">
+    <h2 class="text-3xl font-bold text-blue-900 mb-8 text-center">Get in Touch</h2>
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Form -->
+      <form class="bg-white p-8 rounded-lg shadow space-y-4">
+        <input type="text" placeholder="Full Name" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+        <input type="email" placeholder="Email Address" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+        <textarea rows="5" placeholder="Your Message" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"></textarea>
+        <button class="w-full bg-green-500 text-white py-3 rounded-lg font-semibold hover:bg-green-600 transition">Send Message</button>
+      </form>
+      <!-- Info -->
+      <div class="flex flex-col justify-center space-y-4">
+        <p><strong>Email:</strong> pages@e.email</p>
+        <p><strong>Phone:</strong> 08070777487</p>
+        <p><strong>Location:</strong> Lagos, Nigeria</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-blue-900 text-white py-6 text-center mt-10">
+    <p>&copy; 2025 3Pages IT Solutions. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
