@@ -1,0 +1,579 @@
+/* ========================================
+   BETTER FIELD ENGINEERING LIMITED
+   Responsive Stylesheet
+   ======================================== */
+
+/* ========================================
+   TABLET - 968px and below
+   ======================================== */
+
+@media (max-width: 968px) {
+    .project-slide,
+    .agro-content {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 350px;
+    }
+
+    .project-image::before {
+        font-size: 0.85rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .agro-section::before {
+        font-size: 15rem;
+        right: -3rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* ========================================
+   MOBILE - 768px and below
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #091936;
+        padding: 1rem;
+        gap: 0;
+    }
+
+    .nav-links li {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Logo */
+    .logo-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo-text-main {
+        font-size: 1.1rem;
+    }
+
+    .logo-text-sub {
+        font-size: 0.65rem;
+        letter-spacing: 1.5px;
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .hero-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .hero-arrow-left {
+        left: 1rem;
+    }
+
+    .hero-arrow-right {
+        right: 1rem;
+    }
+
+    .hero-nav {
+        bottom: 1rem;
+        gap: 0.75rem;
+    }
+
+    .hero-nav-dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .hero-nav-dot.active {
+        width: 30px;
+    }
+
+    /* Stats */
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.95rem;
+    }
+
+    /* Sections */
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Services */
+    .services {
+        padding: 3rem 1.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .service-card {
+        padding: 2rem;
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+
+    /* Projects */
+    .projects {
+        padding: 3rem 1.5rem;
+    }
+
+    .project-slide {
+        gap: 2rem;
+    }
+
+    .project-info h3 {
+        font-size: 1.8rem;
+    }
+
+    .project-info p {
+        font-size: 1rem;
+    }
+
+    .slider-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    /* Agro Section */
+    .agro-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .agro-section::before {
+        font-size: 10rem;
+    }
+
+    .agro-text h2 {
+        font-size: 2rem;
+    }
+
+    .agro-text p {
+        font-size: 1rem;
+    }
+
+    .agro-feature {
+        padding: 1.25rem;
+    }
+
+    .agro-feature h4 {
+        font-size: 1.1rem;
+    }
+
+    /* Industries */
+    .industries {
+        padding: 3rem 1.5rem;
+    }
+
+    .industries-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .industry-card {
+        padding: 1.5rem;
+    }
+
+    .industry-icon {
+        font-size: 2.5rem;
+    }
+
+    /* CTA */
+    .cta-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+
+    .cta-section p {
+        font-size: 1.1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem 1.5rem 1rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* ========================================
+   SMALL MOBILE - 480px and below
+   ======================================== */
+
+@media (max-width: 480px) {
+    /* Navigation */
+    .nav-container {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        flex-direction: column;
+        gap: 0.3rem;
+        align-items: flex-start;
+    }
+
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-text {
+        align-items: flex-start;
+    }
+
+    .logo-text-main {
+        font-size: 1rem;
+    }
+
+    .logo-text-sub {
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero-slide {
+        min-height: 550px;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .hero-badge {
+        font-size: 0.7rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .cta-buttons {
+        gap: 0.75rem;
+    }
+
+    .btn {
+        padding: 0.9rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .hero-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .hero-arrow-left {
+        left: 0.5rem;
+    }
+
+    .hero-arrow-right {
+        right: 0.5rem;
+    }
+
+    .hero-nav {
+        bottom: 0.75rem;
+        gap: 0.5rem;
+    }
+
+    .hero-nav-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .hero-nav-dot.active {
+        width: 24px;
+    }
+
+    /* Stats */
+    .stats {
+        padding: 2.5rem 1rem;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    /* Sections */
+    .services,
+    .projects,
+    .agro-section,
+    .industries,
+    .cta-section {
+        padding: 2.5rem 1rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+
+    /* Service Cards */
+    .service-card {
+        padding: 1.75rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-card p {
+        font-size: 0.95rem;
+    }
+
+    .service-card ul li {
+        font-size: 0.9rem;
+    }
+
+    /* Project */
+    .project-image {
+        height: 280px;
+    }
+
+    .project-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-info p {
+        font-size: 0.95rem;
+    }
+
+    .project-tags {
+        gap: 0.4rem;
+    }
+
+    .tag {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .badge {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    /* Agro Section */
+    .agro-section::before {
+        font-size: 8rem;
+        right: -2rem;
+    }
+
+    .agro-text h2 {
+        font-size: 1.75rem;
+    }
+
+    .agro-text p {
+        font-size: 0.95rem;
+    }
+
+    .agro-feature {
+        padding: 1rem;
+    }
+
+    .agro-feature h4 {
+        font-size: 1rem;
+    }
+
+    .agro-feature p {
+        font-size: 0.9rem;
+    }
+
+    /* Industries */
+    .industry-card {
+        padding: 1.25rem;
+    }
+
+    .industry-icon {
+        font-size: 2.25rem;
+    }
+
+    .industry-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .industry-card p {
+        font-size: 0.95rem;
+    }
+
+    /* CTA */
+    .cta-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem 1rem 1rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-section ul li {
+        font-size: 0.9rem;
+    }
+
+    .social-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   LANDSCAPE MOBILE
+   ======================================== */
+
+@media (max-width: 896px) and (orientation: landscape) {
+    .hero,
+    .hero-slide {
+        min-height: 500px;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-nav {
+        bottom: 1rem;
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    nav,
+    .hero-nav,
+    .hero-arrow,
+    .slider-controls,
+    .cta-section,
+    .social-links,
+    footer {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        color: #000;
+    }
+
+    .section-title {
+        page-break-after: avoid;
+    }
+
+    .service-card,
+    .project-slide,
+    .industry-card {
+        page-break-inside: avoid;
+    }
+}
